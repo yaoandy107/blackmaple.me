@@ -49,7 +49,6 @@ a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
     margin: 10px 0px 10px 0px;
     padding: 16px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -59,6 +58,7 @@ a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
     background-image: url(../img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    justify-content: center;
 }
 
 .card .content {
@@ -66,8 +66,12 @@ a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
     width: 100%;
 }
 
-.card .content p {
+.experience .content p {
     margin-bottom: 10px;
+}
+
+.skill .content p {
+    margin-top: 10px;
 }
 
 .hr:after {
@@ -80,4 +84,12 @@ a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
 
 .title {
     margin-bottom: 10px;
+}
+
+.skill {
+    height: 97%;
+}
+
+.experience {
+
 }
