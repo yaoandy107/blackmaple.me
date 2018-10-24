@@ -8,7 +8,12 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-workbox.routing.registerRoute(new RegExp('.*.js'));
+workbox.routing.registerRoute(
+  /^scripts\/.*\.js/,
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'js-cache'
+  })
+);
 
 workbox.routing.registerRoute(
   // Cache CSS files
