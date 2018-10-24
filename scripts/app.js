@@ -3,4 +3,10 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js');
   });
+
+  window.addEventListener('fetch', function(event) {
+    event.respondWith(
+      new Response('bad')
+    );
+  });
 }
