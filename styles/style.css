@@ -22,6 +22,9 @@ a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
     line-height: 1.6;
     letter-spacing: 1px;
 }
+a:hover {
+    text-decoration: none;
+}
 
 /* Head */
 #name {
@@ -126,4 +129,11 @@ span.red {
 }
 .card-title {
     margin-bottom: 0px;
+}
+
+/* Font Awesome */
+.social-font {
+    color: #17a2b8;
+    font-size: 24px;
+    margin: 0 20px;
 }
