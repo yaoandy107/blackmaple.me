@@ -65,6 +65,9 @@ a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
     justify-content: left;
     width: 100%;
 }
+.card .badge {
+    margin-bottom: 8px;
+}
 .title {
     margin-bottom: 10px;
 }
@@ -76,10 +79,10 @@ a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
 
 /* Skill */
 .skill {
-    height: 98%;
+
 }
 .skill .content p {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Experience */
@@ -103,7 +106,24 @@ a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
     margin-top: 24px;
 }
 
+/* Common */
+span.blue {
+    color: #1976d2;
+}
+span.green {
+    color: #388e3c;
+}
+span.orange {
+    color: #f57c00;
+}
+span.red {
+    color: #d32f2f;
+}
+
 /* Override Bootstrap 4 */
 .card-body {
     width: 100%;
+}
+.card-title {
+    margin-bottom: 0px;
 }
